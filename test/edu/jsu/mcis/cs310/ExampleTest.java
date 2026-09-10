@@ -49,4 +49,12 @@ public class ExampleTest {
         assertEquals(expectedReverse3, actual);
     }
     
+    @Test
+    public void test4characterswap() {
+        String og = main.getGreeting();
+        String ogrev = main.reverse(og);
+        assertEquals(og.charAt(0), ogrev.charAt(ogrev.length()-1));
+        assertEquals(og.charAt(og.length()-1), ogrev.charAt(0));
+    }
+        
 }
